@@ -1,0 +1,64 @@
+/* index */
+.wrapper{
+  display: flex;
+}
+.side-bar{
+  width: 300px;
+  background-color: #253141;
+  height: 100vh;
+}
+.main{
+  width: calc(100vw - 300px);
+  background-color: #fff;
+}
+
+/* _side_bar */
+.side-header{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.new-chat a{
+  border: solid 1px lightblue;
+  padding: 14px;
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+.rooms{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.chat-room{
+  padding: 20px 0 40px 0;
+}
+.chat-room a{
+  color: white;
+  text-decoration: none;
+}
+
+/* _main_chat */
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+}
+.comments{
+  /* 上下の高さを最初から計算して190pxとすると他の人が見た時にわからないからそれぞれ書く */
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 46px 40px 0 40px;
+}
+.form{
+  height: 90px;
+  background-color: #fff;
+  padding: 20px 40px;
+}

@@ -1,0 +1,133 @@
+/* index */
+.wrapper{
+  display: flex;
+}
+.side-bar{
+  width: 300px;
+  background-color: #253141;
+  height: 100vh;
+}
+.main{
+  width: calc(100vw - 300px);
+  background-color: #fff;
+}
+
+/* _side_bar */
+.side-header{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.new-chat a{
+  border: solid 1px lightblue;
+  padding: 14px;
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+.rooms{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.chat-room{
+  padding: 20px 0 40px 0;
+}
+.chat-room a{
+  color: white;
+  text-decoration: none;
+}
+
+/* _main_chat */
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+}
+.chat-title{
+  margin-right: auto;
+  margin-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+.chat-end{
+  margin-top: 40px;
+}
+.chat-end a{
+  text-decoration: none;
+  color: darkred;
+  padding: 20px;
+  border: 1px solid darkred;
+}
+.comments{
+  /* 上下の高さを最初から計算して190pxとすると他の人が見た時にわからないからそれぞれ書く */
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 46px 40px 0 40px;
+  overflow: scroll;
+}
+.user-date-time{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+.name{
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+}
+.data-time{
+  font-size: 12px;
+  color: #999;
+}
+.text{
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
+}
+.form{
+  height: 90px;
+  background-color: #ddd;
+  padding: 20px 40px;
+  display: flex;
+}
+.message-form{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.message{
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.form-submit{
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
